@@ -56,6 +56,11 @@ h2 {
   font-family: "Marcellus", serif;
 }
 
+#tools {
+  background-color: lightgoldenrodyellow;
+  font-family: "Marcellus", serif;
+}
+
 #faculty {
   background-color: #f9f7f6;
   display: flex;
