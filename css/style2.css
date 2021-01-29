@@ -14,3 +14,10 @@ body {
   align-items: center; /* These next two properties center the flex items */
   justify-content: center;
 }
+
+#main-title {
+  color: #7ac6e4;
+  font-family: "Cormorant Garamond", monospace;
+  text-align: center;
+  font-size: 4rem;
+}
