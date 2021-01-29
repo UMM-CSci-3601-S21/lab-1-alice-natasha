@@ -21,3 +21,10 @@ body {
   text-align: center;
   font-size: 4rem;
 }
+
+
+#validation {
+  font-size: 0.8rem;
+  background-color: #ade8fc;
+  padding: 25px;
+}
