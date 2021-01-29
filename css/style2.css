@@ -8,5 +8,9 @@ use float to make something locate itself on the right or left
 
 body {
   padding: 30px;
-  background-color: #ffffff;
+  background-color: #05737a;
+  display: flex; /* this is the flexbox model. It adds responsive design to its items */
+  flex-direction: column; /* this says how the flex items will align (e.g. 'row') */
+  align-items: center; /* These next two properties center the flex items */
+  justify-content: center;
 }
