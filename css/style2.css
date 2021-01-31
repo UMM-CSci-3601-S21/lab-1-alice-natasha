@@ -39,6 +39,7 @@ body {
   font-family: "Source Code Pro", monospace;
   padding: 30px;
   width: 35em;
+  margin: auto;
 }
 
 #courses {
@@ -46,6 +47,7 @@ body {
   font-family: "Source Code Pro", monospace;
   padding: 30px;
   width: 40em;
+  margin: auto;
 }
 
 
@@ -59,7 +61,7 @@ body {
 }
 
 #tools > ol > li{
-  display: inline;
+  display: run-in;
   list-style-type: circle;
 }
 
