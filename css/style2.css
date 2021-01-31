@@ -48,12 +48,15 @@ body {
 
 
 #tools {
-  display: none;
   background-color: rgba(0, 255, 255, 0.795);
   font-family: "Source Code Pro", monospace;
   padding: 30px;
   justify-content: center;
   align-content: center;
+}
+
+#tools > ol > li{
+  display: inline;
 }
 
 #faculty {
@@ -66,7 +69,7 @@ body {
 
 #faculty > ul > li {
   display: inline-block;
-  font-family: sans-serif;
+  font-family: "Source Code Pro", monospace;
   padding: 30px;
 }
 
@@ -93,7 +96,43 @@ body {
 
 img.pic {
   width: 100%;
+  border: 4px;
   border-radius: 25px solid #000000;
+}
+
+#style-selector {
+  position: fixed;
+  background-color: #05737a;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 46px;
+  padding-top: 10px;
+}
+
+#style-selector ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgb(34, 34, 34);
+}
+
+#style-selector li {
+  float: right; /*explore what happens if this is 'right' instead*/
+}
+
+#style-selector li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px; /*this adds some spacing around the items in our "nav bar" */
+  text-decoration: none;
+}
+
+/* Change the link background color to #000 (black) on hover */
+#style-selector li a:hover {
+  background-color: #000;
 }
 
 
