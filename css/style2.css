@@ -37,7 +37,8 @@ body {
 #pslo {
   background-color: #49c0c9;
   font-family: "Source Code Pro", monospace;
-  padding: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
   width: 35em;
   margin: auto;
 }
