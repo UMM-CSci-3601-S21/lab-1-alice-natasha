@@ -22,6 +22,28 @@ body {
   font-size: 4rem;
 }
 
+.section {
+  padding: 20px;
+  border: 5px solid;
+  margin: 10px;
+  max-width: 48em;
+}
+
+#pslo {
+  background-color: #d5d6d2;
+  font-family: "Marcellus", serif;
+  padding: 25px;
+}
+
+
+#tools {
+  display: inline;
+  font-family: "lora", serif;
+  padding: 30px;
+  justify-content: center;
+  align-content: center;
+}
+
 
 #validation {
   font-size: 0.8rem;
