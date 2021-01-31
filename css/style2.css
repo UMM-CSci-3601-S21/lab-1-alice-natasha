@@ -38,12 +38,14 @@ body {
   background-color: #49c0c9;
   font-family: "Source Code Pro", monospace;
   padding: 30px;
+  width: 35em;
 }
 
 #courses {
   background-color: #76e6fa;
   font-family: "Source Code Pro", monospace;
   padding: 30px;
+  width: 40em;
 }
 
 
@@ -53,10 +55,12 @@ body {
   padding: 30px;
   justify-content: center;
   align-content: center;
+  width: max-content;
 }
 
 #tools > ol > li{
   display: inline;
+  list-style-type: circle;
 }
 
 #faculty {
@@ -96,8 +100,8 @@ body {
 
 img.pic {
   width: 100%;
-  border: 4px;
-  border-radius: 25px solid #000000;
+  border: 4px solid #000000;
+  border-radius: 50%;
 }
 
 #style-selector {
