@@ -47,6 +47,7 @@ body {
   background-color: #76e6fa;
   font-family: "Source Code Pro", monospace;
   padding: 30px;
+  margin-top: 30px;
   width: 40em;
   margin: auto;
 }
@@ -58,7 +59,7 @@ body {
   padding: 30px;
   justify-content: center;
   align-content: center;
-  width: max-content;
+  width: 40em;
 }
 
 #tools > ol > li{
