@@ -63,17 +63,19 @@ body {
   align-content: center;
 }
 
-.tools-lg > ol > li{
-  display: inline;
-}
-
-
-@media screen and (min-width: 600px) {
+@media screen and (max-width: 600px) {
   .tools-lg > ol > li{
     display: run-in;
     list-style-type: circle;
   }
 }
+
+@media screen and (min-width: 601px) {
+  .tools-lg > ol > li{
+    display: inline;
+  }
+}
+
 
 #faculty {
   background-color: #93d9e2;
