@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>UMM Computer Science</title>
-  <link rel="stylesheet" type="text/css" href="./css/style1.css">
+  <link rel="stylesheet" type="text/css" href="./css/style2.css">
 
   <!-- Add some Google Fonts. -->
   <!-- Adding fonts like this increases load time, so you don't want to include fonts -->
@@ -106,7 +106,9 @@
       </ul>
     </div>
   </div>
-<div class="section" id="tools">
+
+
+<div class="section, tools-lg" id="tools">
   <h2>Some useful tools to have:</h2>
   <ol>
   <li class="list-of-tools" id="git">
@@ -190,5 +192,30 @@
     </ul>
   </div>
 </body>
+
+<script type="text/javascript">
+
+  console.log(document.getElementById('tools').classList);
+  console.log('Window width: ', window.innerWidth);
+
+  window.addEventListener('resize', function(event){
+  if(window.innerWidth < 650) {
+    let tools = document.getElementById("tools");
+    let classes = tools.classList;
+    console.log('Classes: ', classes);
+
+    classes.remove('tools-lg');
+    classes.add('tools-sm');
+
+  }else{
+    let tools = document.getElementById("tools");
+    let classes = tools.classList;
+    classes.remove('tools-sm');
+    classes.add('tools-lg');
+  }
+  })
+  console.log(document.getElementById('tools').classList);
+
+  </script>
 
 </html>
