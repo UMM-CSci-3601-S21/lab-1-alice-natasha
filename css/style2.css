@@ -16,7 +16,11 @@ body {
 }
 
 
- @media screen and (min-width: 925px) {
+/*
+Edited media query so that the "pslo" and "course" sections
+would not be side by side and instead would be in a vertical line
+*/
+@media screen and (min-width: 925px) {
   .pslo-courses-container {
     display: flex;
     flex-direction: column;
@@ -27,7 +31,7 @@ body {
 #main-title {
   color: #7ac6e4;
   font-family: "Cormorant Garamond", serif;
-  text-shadow: -1px 1px 2px #000,
+  text-shadow: -1px 1px 2px #000, /*creates a shadow and outline on the title*/
 				  1px 1px 2px #000,
 				  1px -1px 0 #000,
 				  -1px -1px 0 #000;
@@ -35,6 +39,21 @@ body {
   font-size: 4rem;
 }
 
+/*
+Rule 1: Use of grouping to eliminate the need to specify
+font for each id and level 2 header
+*/
+h2, #pslo, #courses, #tools, #faculty {
+  font-family: "Source Code Pro", monospace;
+}
+
+/*
+We removed the border-radius to create straight edged boxes
+instead of the rounded ones of style 1
+
+Rule 2: use of a class to create a uniform look
+for each of the ids within the class "section"
+*/
 .section {
   padding: 20px;
   border: 5px solid;
@@ -43,35 +62,44 @@ body {
   max-width: 48em;
 }
 
+/*
+Rule 5: use of id to override the body color,
+and to allow each id to have a different background color
+*/
 #pslo {
   background-color: #49c0c9;
-  font-family: "Source Code Pro", monospace;
 }
 
 #courses {
   background-color: #76e6fa;
-  font-family: "Source Code Pro", monospace;
 }
 
 
-.tools-lg {
+#tools{
   background-color: rgba(0, 255, 255, 0.795);
-  font-family: "Source Code Pro", monospace;
-  border: 5px solid;
-  border-color: rgb(255, 255, 255);
   justify-content: center;
   align-content: center;
 }
 
+/*
+Adds a max width to the "tools" to enable a more responsive
+site. Once the page reaches 600px the display will change to
+horizontal instead of a bulleted list
+*/
 @media screen and (max-width: 600px) {
-  .tools-lg > ol > li{
+  #tools > ol > li{
     display: run-in;
     list-style-type: circle;
   }
 }
 
+/*
+Adds a minimum width to create a horizontal list
+of tools instead of the bulleted list after the
+window reaches 601px.
+*/
 @media screen and (min-width: 601px) {
-  .tools-lg > ol > li{
+  #tools > ol > li{
     display: inline;
   }
 }
@@ -85,9 +113,12 @@ body {
   align-content: center;
 }
 
+/*
+Rule 3: Use of descendant selectors to specify nested
+direct descendants
+*/
 #faculty > ul > li {
   display: inline-block;
-  font-family: "Source Code Pro", monospace;
   padding: 30px;
 }
 
@@ -112,6 +143,10 @@ body {
   font-family: "Source Code Pro", monospace;
 }
 
+/*
+Creates a circular image and background
+instead of a square one
+*/
 img.pic {
   width: 100%;
   border: 4px solid #000000;
@@ -128,6 +163,9 @@ img.pic {
   padding-top: 10px;
 }
 
+/*
+Rule 4: Nesting used to specify all the unsorted lists
+within the style-selector id*/
 #style-selector ul {
   list-style-type: none;
   margin: 0;
@@ -137,7 +175,8 @@ img.pic {
 }
 
 #style-selector li {
-  float: right; /*explore what happens if this is 'right' instead*/
+  float: right; /*Moves the style selectors to the right
+                  of the site, does not need to be graded*/
 }
 
 #style-selector li a {
