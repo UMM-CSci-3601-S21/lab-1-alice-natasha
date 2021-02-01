@@ -193,29 +193,5 @@
   </div>
 </body>
 
-<script>
-
-  console.log(document.getElementById('tools').classList);
-  console.log('Window width: ', window.innerWidth);
-
-  window.addEventListener('resize', function(event){
-  if(window.innerWidth < 650) {
-    let tools = document.getElementById("tools");
-    let classes = tools.classList;
-    console.log('Classes: ', classes);
-
-    classes.remove('tools-lg');
-    classes.add('tools-sm');
-
-  }else{
-    let tools = document.getElementById("tools");
-    let classes = tools.classList;
-    classes.remove('tools-sm');
-    classes.add('tools-lg');
-  }
-  })
-  console.log(document.getElementById('tools').classList);
-
-  </script>
 
 </html>
